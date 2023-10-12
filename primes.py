@@ -1,5 +1,14 @@
 """List of prime numbers generator."""
 """ENTER YOUR SOLUTION HERE!"""
+def checkprime(num):
+    
+    if num > 1:
+        for i in range(2, num):
+            if num % i == 0:
+                return False
+        return True
+    else:
+        return False
 
 def checkprime(num):
     
@@ -19,4 +28,8 @@ def primes(number_of_primes):
         if(checkprime(num)):
            list.append(num)
         num = num +1
+<<<<<<< HEAD
     return list
+=======
+    return list
+>>>>>>> 189a940 (final)
